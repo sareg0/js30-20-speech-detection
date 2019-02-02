@@ -24,18 +24,14 @@
       .map(alternative => alternative.transcript)
       .join("")
 
-    console.log(transcript)
     p.textContent = transcript
-  }
-
-
-  function appendParagraph () {
-    p = document.createElement('p')
-    $words.appendChild(p)
+    if (event.results[0].isFinal) {
+      p = document.createElement('p')
+      $words.appendChild(p)
+    }
   }
 
   recognition.addEventListener('end', recognition.start)
-  recognition.addEventListener('start', appendParagraph)
 
 </script>
 
