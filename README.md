@@ -1,6 +1,7 @@
 # js30-20-speech-detection
 Put your words on the page using the SpeechRecognition API https://youtu.be/0mJC0A72Fnw
 
+**This seems to only work properly in Chrome :cry: **
 
 You will need to run `npm install` inside this directory to install browsersync, then run `npm start` to run the browsersync server.
 
